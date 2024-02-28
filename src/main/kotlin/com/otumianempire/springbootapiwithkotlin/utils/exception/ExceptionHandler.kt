@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.RestControllerAdvice
 
 @RestControllerAdvice
 class ExceptionHandler {
-    @ExceptionHandler(Exception::class)
-    fun todoExceptionHandler(exception: Exception): ResponseEntity<ApiError> {
+    @ExceptionHandler(TodoException::class)
+    fun todoExceptionHandler(exception: TodoException): ResponseEntity<ApiError> {
         val error = ApiError(message = exception.message)
+        println(error)
         return ResponseEntity(error, error.status)
     }
+
+
 }

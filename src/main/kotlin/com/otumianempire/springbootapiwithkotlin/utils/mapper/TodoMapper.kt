@@ -2,7 +2,6 @@ package com.otumianempire.springbootapiwithkotlin.utils.mapper
 
 import com.otumianempire.springbootapiwithkotlin.dto.TodoDto
 import com.otumianempire.springbootapiwithkotlin.entity.Todo
-import com.otumianempire.springbootapiwithkotlin.utils.mapper.Mapper
 import org.springframework.stereotype.Service
 
 @Service
